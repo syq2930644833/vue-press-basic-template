@@ -1,8 +1,9 @@
 import { defineConfig } from "vuepress/config";
+import { NavItems4ZH, Sidebar4ZH } from './config/index';
 
 export default defineConfig(ctx => ({
-    title: '网站的标题',
-    description: '网站的描述',
+    title: '了了学习日记',
+    description: '了了学习日记',
     head: [
         ['link', { rel: 'icon', href: '/img/favicon.ico' }],
         [
@@ -13,10 +14,28 @@ export default defineConfig(ctx => ({
             },
         ],
     ],
-    locales: undefined, // 多语言支持
+    themeConfig: {
+        // https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html#git-%E4%BB%93%E5%BA%93%E5%92%8C%E7%BC%96%E8%BE%91%E9%93%BE%E6%8E%A5
+        // repo: 'syq2930644833/vue-press-basic-template', // 导航栏右上角github链接， 编辑参考上面地址
+        logo: '/img/favicon.ico',
+        nav: NavItems4ZH,
+        sidebar: Sidebar4ZH
+    },
+    plugins: [
+        ['@vuepress/nprogress'],
+        ['@vuepress/back-to-top', true],
+        [
+            '@vuepress/pwa',
+            {
+              serviceWorker: true,
+              updatePopup: true
+            }
+          ],
+          ['@vuepress/medium-zoom', true],
+    ],
     // 监听文件变化并重新构建
     extraWatchFiles: [
         '.vuepress/config.ts',
-        '.vuepress/config/htmlModules.ts',
+        'index.md'
     ]
 }))
