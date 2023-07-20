@@ -10,7 +10,6 @@ export function getHtmlSidebar(
             collapsable: false,
             children: [
               ['', introductionA],
-              'test'
             ]
           }
         ]
@@ -23,15 +22,14 @@ export function getJsSidebar(groupA, groupB): SidebarConfigArray {
             title: groupA,
             collapsable: false,
             children: [
-                '',
-                'test'
+                ''
             ]
         },
         {
             title: groupB,
             collapsable: false,
             children: [
-                'test'
+                ''
             ]
         }
     ]
