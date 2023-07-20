@@ -1,10 +1,18 @@
 ---
 home: true
 heroImage: /img/hero.png
-heroText: 首页展示
-tagline: 首页展示
+heroText: 一分耕耘 一分收获
+tagline: 谨以此站记录日常积累
+actionText: 温故而知新 →
+actionLink: /html/
 ---
 
+```bash
+    no pain
+
+    no gain
+```
+
 ::: slot footer
-MIT Licensed | Copyright © 2023
+Based on vuepress | Copyright © 2023 :tada:
 :::
