@@ -14,7 +14,6 @@ export default defineConfig(ctx => ({
       },
     ],
   ],
-  dest: '../../vuepress',
   themeConfig: {
     // https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html#git-%E4%BB%93%E5%BA%93%E5%92%8C%E7%BC%96%E8%BE%91%E9%93%BE%E6%8E%A5
     // repo: 'syq2930644833/vue-press-basic-template', // 导航栏右上角github链接， 编辑参考上面地址
