@@ -2,8 +2,8 @@ import { defineConfig } from "vuepress/config";
 import { NavItems4ZH, Sidebar4ZH } from './config/index';
 
 export default defineConfig(ctx => ({
-  title: '了了学习日记',
-  description: '了了学习日记',
+  title: '一个学不会的瓦逼前端',
+  description: '壹朵小花吖',
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }],
     [
@@ -38,5 +38,5 @@ export default defineConfig(ctx => ({
     lineNumbers: true
   },
   // 监听文件变化并重新构建
-  extraWatchFiles: ['.vuepress/config/**', 'index.md']
+  extraWatchFiles: ['.vuepress/config/**', 'index.md', 'html/**', '.vuepress/config/sidebar/**', '.vuepress/**']
 }))
