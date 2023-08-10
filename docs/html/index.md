@@ -1,4 +1,4 @@
-# HTML 简介
+# HTML 简介  (HTML5 标准)
 
 HTML的全称为**超文本标记语言**（英文全称：**Hyper Text Markup Language**），是一种标记语言。
 
