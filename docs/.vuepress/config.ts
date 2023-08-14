@@ -2,8 +2,8 @@ import { defineConfig } from "vuepress/config";
 import { NavItems4ZH, Sidebar4ZH } from './config/index';
 
 export default defineConfig(ctx => ({
-  title: '一个学不会的瓦逼前端',
-  description: '壹朵小花吖',
+  title: '好记性不如烂笔头.',
+  description: 'Vue 驱动的静态网站生成器',
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }],
     [
@@ -14,6 +14,18 @@ export default defineConfig(ctx => ({
       },
     ],
   ],
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: '烂笔头.',
+      description: 'Vue 驱动的静态网站生成器'
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'Good Memory.',
+      description: 'Vue-powered Static Site Generator'
+    },
+  },
   themeConfig: {
     // https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html#git-%E4%BB%93%E5%BA%93%E5%92%8C%E7%BC%96%E8%BE%91%E9%93%BE%E6%8E%A5
     // repo: 'syq2930644833/vue-press-basic-template', // 导航栏右上角github链接， 编辑参考上面地址
@@ -21,6 +33,28 @@ export default defineConfig(ctx => ({
     nav: NavItems4ZH,
     sidebar: Sidebar4ZH,
     smoothScroll: true,
+    locales: {
+      '/': {
+        label: '简体中文',
+        selectText: '选择语言',
+        ariaLabel: '选择语言',
+        // sidebarDepth: 2, // 目录嵌套层级 0:禁用, 1:h2, 2:h3
+        // editLinkText: '在 GitHub 上编辑此页',
+        // lastUpdated: '上次更新',
+        nav: NavItems4ZH,
+        sidebar: Sidebar4ZH
+      },
+      '/en/': {
+        label: 'English',
+        selectText: 'Languages',
+        ariaLabel: 'Select language',
+        // sidebarDepth: 2,
+        // editLinkText: 'Edit this page on GitHub',
+        // lastUpdated: 'Last Updated',
+        nav: NavItems4ZH,
+        sidebar: Sidebar4ZH
+      },
+    }
   },
   plugins: [
     ['@vuepress/nprogress'],

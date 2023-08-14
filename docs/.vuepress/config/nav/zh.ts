@@ -25,5 +25,5 @@ export const NavItems4ZH: NavItem[] = [
             { text: 'React', link: '/react/' }
         ]
     },
-    { text: '随笔', link: '/essay/' }
+    { text: '日常记录', link: '/essay/' }
 ]

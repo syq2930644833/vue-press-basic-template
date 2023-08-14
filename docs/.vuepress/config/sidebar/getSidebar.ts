@@ -1,38 +1,38 @@
-import { SidebarConfigArray } from 'vuepress/config'
+import { SidebarConfigArray, SidebarItem4Shortcut } from 'vuepress/config'
 
-export function getHtmlSidebar(
-    groupA: string,
-    introductionA: string
+export function getCommonSidebar(
+  groupA: string,
+  // introductionA: string,
+  children: SidebarItem4Shortcut[]
 ): SidebarConfigArray {
-        const sidebar: SidebarConfigArray = [
-          {
-            title: groupA,
-            collapsable: false,
-            children: [
-              ['', introductionA],
-            ]
-          }
-        ]
-        return sidebar
-      }
+  const sidebar: SidebarConfigArray = [
+    {
+      title: groupA,
+      collapsable: false,
+      children: children
+    }
+  ]
+  return sidebar
+}
 
-export function getJsSidebar(groupA, groupB): SidebarConfigArray {
-    const sidebar: SidebarConfigArray = [
-        {
-            title: groupA,
-            collapsable: false,
-            children: [
-                ''
-            ]
-        },
-        {
-            title: groupB,
-            collapsable: false,
-            children: [
-                ''
-            ]
-        }
-    ]
+export function getSubSidebar(
+  groupA: string,
+  groupB: string,
+  childrenA = [''],
+  childrenB = ['']
+): SidebarConfigArray {
+  const sidebar: SidebarConfigArray = [
+    {
+      title: groupA,
+      collapsable: false,
+      children: childrenA
+    },
+    {
+      title: groupB,
+      collapsable: false,
+      children: childrenB
+    }
+  ]
 
-    return sidebar
+  return sidebar
 }
