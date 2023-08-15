@@ -27,6 +27,10 @@
 
 ## 百度（外派）
 
+::: tip
+引导式面试，体验非常好
+:::
+
 1. 盒模型
 2. 块元素，行内元素，行内块元素有区别么？
 3. 常用的行内块元素说上两个
@@ -37,8 +41,8 @@
 8. typeof null， typeof []
 9. 判断一个数组是数组
 10. 既然你说了Array.isArray()，我再写一个[].push()，说一说这俩方法有啥区别么？
-11. Class static 静态属性
-12. 说一下 forEach map some every filter
+11. **Class** static **静态属性**
+12. 说一下 **forEach map some every filter**
 13. 现在有一个需求，点击一下记一次数，用闭包写一个
 14. 假如说事件监听，你怎么用呢?
 15. 函数柯里化

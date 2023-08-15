@@ -1,5 +1,5 @@
 import { defineConfig } from "vuepress/config";
-import { NavItems4ZH, Sidebar4ZH } from './config/index';
+import { NavItems4ZH, NavItems4EN, Sidebar4ZH } from './config/index';
 
 export default defineConfig(ctx => ({
   title: '好记性不如烂笔头.',
@@ -51,7 +51,7 @@ export default defineConfig(ctx => ({
         // sidebarDepth: 2,
         // editLinkText: 'Edit this page on GitHub',
         // lastUpdated: 'Last Updated',
-        nav: NavItems4ZH,
+        nav: NavItems4EN,
         sidebar: Sidebar4ZH
       },
     }
