@@ -4,7 +4,10 @@ import {
     getSubSidebar
 } from './getSidebar'
 
-const commonIntroduction: SidebarItem4ShortcutTuple = ['', '开始'];
+
+const getCommonIntroduction: (introduction?: string) => SidebarItem4ShortcutTuple = (introduction: string = '开始') => {
+    return ['', introduction];
+}
 
 // TODO getCommonSidebar 第二个参数提出来可能更好些?
 
@@ -12,43 +15,43 @@ export const Sidebar4ZH: SidebarConfig4Multiple = {
   '/html/': getCommonSidebar(
       'HTML篇',
       [
-          commonIntroduction
+          getCommonIntroduction()
       ]
   ),
   '/javaScript/': getCommonSidebar(
       'JS篇',
       [
-          commonIntroduction
+          getCommonIntroduction()
       ]
   ),
   '/css/': getCommonSidebar(
       'CSS篇',
       [
-          commonIntroduction
+          getCommonIntroduction()
       ]
   ),
   '/performance/': getCommonSidebar(
       '性能优化篇',
       [
-          commonIntroduction
+          getCommonIntroduction()
       ]
   ),
   '/engineering/': getCommonSidebar(
       '工程化篇',
       [
-          commonIntroduction
+          getCommonIntroduction()
       ]
   ),
   '/network/': getCommonSidebar(
       '计算机网络篇',
       [
-          commonIntroduction
+          getCommonIntroduction()
       ]
   ),
   '/browser/': getCommonSidebar(
       '浏览器原理',
       [
-          commonIntroduction
+          getCommonIntroduction()
       ]
   ),
   '/vue/': getSubSidebar(
@@ -65,13 +68,15 @@ export const Sidebar4ZH: SidebarConfig4Multiple = {
   '/react/': getCommonSidebar(
       'React篇',
       [
-          commonIntroduction
+          getCommonIntroduction()
       ]
   ),
   '/essay/': getCommonSidebar(
       '日常记录',
       [
-          ''
+            getCommonIntroduction('说明'),
+            // 'difficulties-and-solutions',
+            'interview'
       ]
   ),
 }
