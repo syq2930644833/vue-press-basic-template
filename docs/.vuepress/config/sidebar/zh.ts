@@ -21,7 +21,7 @@ export const Sidebar4ZH: SidebarConfig4Multiple = {
   '/javaScript/': getCommonSidebar(
       'JS篇',
       [
-          getCommonIntroduction()
+          getCommonIntroduction('历史回顾')
       ]
   ),
   '/css/': getCommonSidebar(
