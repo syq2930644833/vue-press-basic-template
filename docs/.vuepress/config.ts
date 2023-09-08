@@ -38,7 +38,7 @@ export default defineConfig(ctx => ({
         label: '简体中文',
         selectText: '选择语言',
         ariaLabel: '选择语言',
-        // sidebarDepth: 2, // 目录嵌套层级 0:禁用, 1:h2, 2:h3
+        sidebarDepth: 2, // 目录嵌套层级 0:禁用, 1:h2, 2:h3
         // editLinkText: '在 GitHub 上编辑此页',
         // lastUpdated: '上次更新',
         nav: NavItems4ZH,
@@ -48,7 +48,7 @@ export default defineConfig(ctx => ({
         label: 'English',
         selectText: 'Languages',
         ariaLabel: 'Select language',
-        // sidebarDepth: 2,
+        sidebarDepth: 2,
         // editLinkText: 'Edit this page on GitHub',
         // lastUpdated: 'Last Updated',
         nav: NavItems4EN,

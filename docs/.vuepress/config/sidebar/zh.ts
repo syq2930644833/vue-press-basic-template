@@ -5,8 +5,8 @@ import {
 } from './getSidebar'
 
 
-const getCommonIntroduction: (introduction?: string) => SidebarItem4ShortcutTuple = (introduction: string = '开始') => {
-    return ['', introduction];
+const getCommonIntroduction: (path?: string, introduction?: string) => SidebarItem4ShortcutTuple = (path: string = '', introduction: string = '开始') => {
+    return [path, introduction];
 }
 
 // TODO getCommonSidebar 第二个参数提出来可能更好些?
@@ -21,7 +21,9 @@ export const Sidebar4ZH: SidebarConfig4Multiple = {
   '/javaScript/': getCommonSidebar(
       'JS篇',
       [
-          getCommonIntroduction('历史回顾')
+          getCommonIntroduction('', '历史回顾'),
+          'script',
+          getCommonIntroduction('language-basics', '语言基础'),
       ]
   ),
   '/css/': getCommonSidebar(
@@ -74,7 +76,7 @@ export const Sidebar4ZH: SidebarConfig4Multiple = {
   '/essay/': getCommonSidebar(
       '日常记录',
       [
-            getCommonIntroduction('说明'),
+            getCommonIntroduction('', '说明'),
             // 'difficulties-and-solutions',
             'interview'
       ]
