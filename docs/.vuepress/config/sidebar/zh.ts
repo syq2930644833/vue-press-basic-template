@@ -60,11 +60,14 @@ export const Sidebar4ZH: SidebarConfig4Multiple = {
       'Vue 2',
       'Vue 3',
       [
-          ''
+          '',
+          'v2-component-communication',
+          'v2-lifecycle',
+          'v2-router',
+          'v2-vuex'
       ],
       [
-          'v3-index',
-          'v3-lifecycle'
+          'v3-index'
       ]
   ),
   '/react/': getCommonSidebar(
