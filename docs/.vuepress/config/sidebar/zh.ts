@@ -64,7 +64,8 @@ export const Sidebar4ZH: SidebarConfig4Multiple = {
           'v2-component-communication',
           'v2-lifecycle',
           'v2-router',
-          'v2-vuex'
+          'v2-vuex',
+          'v2-components'
       ],
       [
           'v3-index'
