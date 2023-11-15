@@ -25,5 +25,6 @@ export const NavItems4EN: NavItem[] = [
             { text: 'React', link: '/react/' }
         ]
     },
-    { text: 'Daily Record', link: '/essay/' }
+    { text: 'Daily Record', link: '/essay/' },
+    { text: 'Interview collection', link: '/interview/' }
 ]

@@ -81,8 +81,16 @@ export const Sidebar4ZH: SidebarConfig4Multiple = {
       '日常记录',
       [
             getCommonIntroduction('', '说明'),
-            // 'difficulties-and-solutions',
-            'interview'
+            'idValidate',
+            'utils'
+      ]
+  ),
+  '/interview/': getCommonSidebar(
+      '面经搜集',
+      [
+            getCommonIntroduction('', '说明'),
+            'interview2021',
+            'interview2023'
       ]
   ),
 }
