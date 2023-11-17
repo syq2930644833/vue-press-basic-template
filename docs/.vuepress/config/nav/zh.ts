@@ -22,7 +22,8 @@ export const NavItems4ZH: NavItem[] = [
         text: '框架',
         items: [
             { text: 'Vue', link: '/vue/' },
-            { text: 'React', link: '/react/' }
+            { text: 'React', link: '/react/' },
+            { text: 'React Native', link: '/reactnative/' }
         ]
     },
     { text: '日常记录', link: '/essay/' },

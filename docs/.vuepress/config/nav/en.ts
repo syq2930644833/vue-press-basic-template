@@ -22,7 +22,8 @@ export const NavItems4EN: NavItem[] = [
         text: 'Frame',
         items: [
             { text: 'Vue', link: '/vue/' },
-            { text: 'React', link: '/react/' }
+            { text: 'React', link: '/react/' },
+            { text: 'React Native', link: '/reactnative/' }
         ]
     },
     { text: 'Daily Record', link: '/essay/' },

@@ -77,6 +77,12 @@ export const Sidebar4ZH: SidebarConfig4Multiple = {
           getCommonIntroduction()
       ]
   ),
+  '/reactnative/': getCommonSidebar(
+      'React Native篇',
+      [
+          getCommonIntroduction()
+      ]
+  ),
   '/essay/': getCommonSidebar(
       '日常记录',
       [
